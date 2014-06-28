@@ -1,4 +1,8 @@
 def first():
+    """
+    Будет выведена строка 'spam', функция обращается к глобальной переменной в объемлющем модуле.
+    """
+
     print('--1--')
     x = 'spam'
 
@@ -8,6 +12,10 @@ def first():
 
 
 def second():
+    """
+    Будет выведена строка 'spam'
+    """
+
     print('--2--')
     x = 'spam'
 
@@ -73,9 +81,15 @@ def sixth():
     func()
 
 if __name__ == '__main__':
+    help(first)
     first()
+    help(second)
     second()
+    help(third)
     third()
+    help(fourth)
     fourth()
+    help(fifth)
     fifth()
+    help(sixth)
     sixth()
